@@ -34,21 +34,75 @@
     </header>
 
 <!--hero/jumbotron-->
-    <section>
+    <section class="hero">
+        <div class="hero-form">
+            <h3>Get Started Today</h3>
+            <p>Fill out this form and one of our trainers will schdule a consult</p>
+            <!-- form element below -->
+            <form class="form">
+                <label for="name">Enter full name:</label>
+                <input type="text" placeholder="Your Name" name="name" id="name" class="form-input"/>
+                <label for="email">Enter your email:</label>
+                <input type="email" placeholder="Your email" name="email" id="email" class="form-input"/>
+                <label for="phone">Enter your phone number:</label>
+                <input type="tel" placeholder="Phone Number" name="phone" id="phone" class="form-input"/>
+                <p>
+                    Have you worked with a trainer before?
+                    <input type="radio" name="trainer-confirm" id="trainer-yes" />
+                    <label for="trainer-yes">Yes</label>
+                    <input type="radio" name="trainer-confirm" id="trainer-no" />
+                    <label for="trainer-no">No</label>
+                </p>
+                <p>
+                    I acknowledge I am 18 years of age.
+                    <input type="checkbox" name="age-confirm" id="checkbox" />
+                </p>
+                <button type="submit">
+                    Get running!
+                </button>
+            </form>
+        </div>
     </section>
  
 <!--"what we do" section-->
-<section>
+<section id="what-we-do">
     <h2>What We Do</h2>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et lacinia ipsum. Curabitur vehicula mi tortor, at iaculis ligula tristique sit amet. Proin egestas turpis erat, sed vulputate libero condimentum eu. In mattis condimentum odio convallis rutrum. Ut aliquam lacus vel iaculis imperdiet. Sed interdum est vel orci pretium tempus lacinia et metus. Mauris dui nisi, finibus et dapibus quis, porta ac nisi. Aenean a rutrum dui.
+    </p>
 </section>
   
 <!--"what you" section-->
-<section>
+<section id="what-you-do">
     <h2>What You Do</h2>
+
+    <div>
+        <img src="./assets/images/step-1.svg" alt="" />
+        <h3>Step 1: Fill Out The Form Above</h3>
+        <p>You're already here, so why not?</p>
+    </div>
+
+    <div>
+        <img src="./assets/images/step-2.svg" />
+        <h3>Step 2: Consult with One of OUr Trainers.</h3>
+        <p>Are you here to build muscle, lose weight, or just feel good?</p>
+    </div>
+
+    <div>
+        <img src="./assets/images/step-3.svg" />
+        <h3>Step 3: Get Running</h3>
+        <p>Hit the ground running (literally) once your trainer lays out your plan.</p>
+    </div>
+
+    <div>
+        <img src="./assets/images/step-4.svg" />
+        <h3>Step 4: Results</h3>
+        <p>Bi-weekly checkins with your trainer will keep you focused.</p>
+    </div>
 </section>
 
 <!--"meet the trainers" section-->
-<section>
+<section id="meet-the-trainers">
     <h2>Meet the trainers</h2>
 </section>
 
@@ -59,6 +113,10 @@
 
 <footer>
     <h2>❤️ Made with love by Run Buddy</h2>
+    <div>
+        <a href="#">Read Our Privacy Policy</a><br />
+        &copy; 2019 Run Buddy, Inc.
+      </div>
 </footer>
 </body>
 </html>
